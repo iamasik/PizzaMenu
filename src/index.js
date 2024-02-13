@@ -79,7 +79,7 @@ function Menu(){
 function Pizza(props){
   let isSold=props.pizzaObj.soldOut
     return <div>
-      <li className="pizza"> 
+      <li className={`pizza ${isSold ? 'sold-out' : ''}`}> 
       <img src={props.pizzaObj.photoName} alt={props.pizzaObj.name}/>
       <div>
         <h3>{props.pizzaObj.name}</h3>
